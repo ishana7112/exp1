@@ -1,0 +1,21 @@
+#include <iostream>
+
+int main() {
+    int number;
+    int count = 0;
+
+    while (true) {
+        std::cout << "Enter the number: ";
+        std::cin >> number;
+
+        if (number % 8 == 0) {
+            count++;
+        } else {
+            break; // Exit loop if the number is not divisible by 8
+        }
+    }
+
+    std::cout << "Total " << count << " numbers are valid numbers." << std::endl;
+
+    return 0;
+}
